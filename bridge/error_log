@@ -1,0 +1,6 @@
+[13-Sep-2015 10:49:30 UTC] PHP Fatal error:  Call to undefined function comments_number() in /home/granoladad62/public_html/wp-content/themes/bridge/comments.php on line 2
+[14-Sep-2015 07:03:59 UTC] PHP Fatal error:  Call to undefined function comments_number() in /home/granoladad62/public_html/wp-content/themes/bridge/comments.php on line 2
+[19-Sep-2015 09:42:08 UTC] PHP Fatal error:  Call to undefined function comments_number() in /home/granoladad62/public_html/wp-content/themes/bridge/comments.php on line 2
+[21-Sep-2015 16:45:58 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/granoladad62/public_html/wp-content/themes/bridge/index.php on line 1
+[05-Oct-2015 14:45:46 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/granoladad62/public_html/wp-content/themes/bridge/index.php on line 1
+[12-Oct-2015 03:28:48 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/granoladad62/public_html/wp-content/themes/bridge/index.php on line 1

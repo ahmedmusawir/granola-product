@@ -1,0 +1,1516 @@
+$imb-primary: #740001; //maroon
+$imb-secondary: #8C9093; //light darkred
+$imb-third: #3D3935; //dark gray
+$brand-primary:  #5FC5BF;
+// $brand-primary:  #FFFC13;
+// $brand-primary: #FF6600;
+// $brand-primary: #FF8300;
+// $brand-primary: lighten( #be8706, 10% );
+// $tiana-primary: #383D66;
+$tiana-primary: $imb-primary;
+$tiana-black: black;
+$tiana-white: $smoke;
+$tiana-teal: #F3918D; //this is tylor red
+// $tiana-teal: #5FC5BF;
+$tiana-gray: #242424;
+$tiana-light-gray: #f9fbfc;
+$tiana-red: #bb324a;
+$alyssa-gray: #5b5b5d;
+$alyssa-gray-light: #DCDBDD;
+$alyssa-green: #abd9ce; 
+
+
+@import "bourbon/bourbon";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
+// @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
+// @import url(https://fonts.googleapis.com/css?family=Bevan);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+// @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+// @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
+// @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+// @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+
+html { 
+ 
+	// display: none;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+
+	// font-family: 'Muli', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	// padding-top: 72px;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $imb-primary;
+	}
+
+	a {
+		text-decoration: none !important;
+		&:hover {
+			text-decoration: none !important;
+		}
+	}
+	
+	// padding-top: 100px;
+	// margin-top: 150px;
+	// @media ( min-width: 1200px ) and ( max-width: 1305px ) {
+	// 	padding-top: 95px;
+	// }	
+
+	// @media ( max-width: 1130px ) {
+	// 	padding-top: 75px;
+	// }
+
+	// @media (max-width: 768px ) {
+	// 	padding-top: 75px;
+	// }
+
+	// @media (max-width: 450px ) {
+	// 	padding-top: 105px;
+	// }	
+
+}
+
+#content {
+
+	font-family: 'Roboto', sans-serif;
+	background: url() no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+	// display: none;
+}
+
+/**
+ *
+ * This code helps with the in-between 991 and 768px
+ *
+ */
+
+@media (min-width: 768px) and (max-width: 1220px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
+@media (max-width: 767px) {
+	.navbar-collapse {
+		// border: 1px solid red;
+		// margin-top: 5rem;
+	}
+}
+
+/**
+ *
+ * HEADER TOP BAR
+ *
+ */
+.top-header-bar {
+	background-color: $imb-primary;
+
+	.headline {
+		color: $smoke;
+	}
+}
+
+/**
+ *
+ * Bootstrap Navigation
+ *
+ */
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    // background-color: $alyssa-gray;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-container {
+	overflow-y: hidden;
+} 
+
+.navbar {
+
+	border: 1px solid $gray-lighter;
+	// border: 1px solid red;
+
+	padding-top: 2rem;
+	padding-bottom: 2.5rem;
+	background-color: $smoke;
+	// box-shadow: 2px 2px 8px $gray-light;
+	margin-bottom: 0rem;
+	font-family: 'Roboto', sans-serif;
+
+	.header-social {
+		padding-top: 1rem;
+
+		li {
+			display: inline-block;
+			margin-top: 1.5rem;
+
+			i {
+				font-size: 1.5rem;
+				padding-right: 1rem;
+
+				color: lighten( $imb-primary, 0% );
+
+				&:hover {
+					color: lighten( $imb-secondary, 15% );
+				}
+			}
+
+		}
+	}
+
+	.navbar-brand {
+
+		.logo {
+			
+			margin-top: -3rem;
+		}
+	}
+	.navbar-toggle {
+		border: 3px solid $imb-primary;
+
+		&:hover, &:focus {
+			background-color: $tiana-primary;
+			color: $tiana-black;
+
+			.icon-bar {
+				background-color: $tiana-white;
+			}
+		}
+		.icon-bar {
+			color: white;
+			background-color: $tiana-primary;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	
+
+	.dropdown-menu {
+			background-color: #101010;
+
+			.current-menu-item {
+				a {
+					color: white;
+				}
+			}
+
+			li {
+
+				a {
+					color: darken( $gray-lighter, 20% );
+
+					&:hover {
+						background-color: lighten( $oil, 10% );
+							
+					}
+				}
+			}
+
+	}
+
+	#menu-menu-1 {
+		padding-top: 1rem;
+		@media (max-width: 1220px) {
+			padding-top: 3rem;
+		}	
+		// @media (max-width: 767px) {
+		// 	padding-top: 3rem;
+		// }	
+
+		li {
+
+			&:hover {
+				background-color: transparent;
+				// background-color: lighten( $tiana-primary, 10% );
+			}
+			a {
+				color: darken( $imb-primary, 0% );
+				// color: darken( $gray-lighter, 15% );
+				font-size: 1.5rem;
+				font-weight: 300;
+				// border: 1px solid red;
+				&:hover {
+					color: $smoke;
+					background-color: $imb-primary;
+					border-radius: 50px;
+				}
+
+				@media (min-width: 768px) and (max-width: 1000px) {
+					font-size: 1rem;
+					font-weight: 700;
+				}				
+			}
+		}
+
+		.current-menu-item {
+
+			a {
+				color: $tiana-white;
+				background-color: lighten( $imb-primary, 0% );
+				border-radius: 50px;
+				// background-color: transparent;
+
+				&:hover {
+					background-color: lighten( $imb-primary, 10% );
+					color: $tiana-white;
+				}
+			}
+		}
+	}
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**
+ *
+ * WP Admin Bar Lowering
+ *
+ */
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+@media (max-width: 800px) {
+    .admin-bar .navbar-fixed-top {
+        margin-top: 46px;
+    }
+}
+
+/**
+ *
+ * Front Page Styles
+ *
+ */
+.front-page-block-1 {
+	background-color: rgba( $steel, .85);
+	height: 95rem;
+
+	.front-page-header {
+		text-align: center;
+		padding-bottom: 10rem;
+		padding-top: 1rem;
+		// padding-top: 6rem;
+
+		img {
+			// border: 3px solid red;
+		}
+		h1 {
+			font-family: 'Bevan', cursive;
+			font-size: 9rem;
+			color: $silver;
+		}
+
+		h4 {
+			font-family: 'Vollkorn', serif;
+			font-size: 4rem;
+			color: $silver;
+
+			padding-top: 2rem;
+			padding-bottom: 3rem;
+
+			i {
+				color: lighten( $silver, 0%);
+			}
+		}
+
+		@media (max-width: 768px) {
+	    	h1 {
+	    		font-size: 5rem;
+	    	}	
+	    	h4 {
+	    		font-size: 3rem;
+	    	}
+	    }
+	}
+
+}
+
+/**
+ *
+ * Services Area
+ *
+ */
+
+
+.front-page-block-2 {
+	// background-color: rgba( darken( $brand-primary, 10% ), .9);
+
+
+	@include background(linear-gradient( rgba( $silver, .8 ), $brand-primary ) left repeat);
+
+
+
+	text-align: center;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+	color: darken( $gray-lighter, 5% );
+
+	.service-box {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+		.service-header {
+			min-height: 15rem;
+			height: auto;
+
+			i {
+				// margin-bottom: .5rem;
+			}
+		}
+
+		.service-text {
+			// padding-top: 1rem;
+			// min-height: 150px;
+			font-size: 1.7rem;
+			font-weight: 400;
+
+		}
+
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		a {
+			margin-top: 2rem;
+		}
+
+
+	}
+
+	#left {
+		color: darkblue;
+	}
+
+	#middle {
+		color: purple;
+	}
+
+	#right {
+		color: black;
+	}
+
+}
+
+/**
+ *
+ * Frontpage Slider 
+ *
+ */
+
+
+.front-page-block-3 {
+
+	background-color: rgba( darken( $oil, 8% ), 1);
+
+	.slider {
+		padding-top: 3rem;
+		margin-top: 3rem;
+
+		img {
+			width: 100%;
+		}
+
+		#fp-carousel {
+			// border: 2px solid red;
+			padding-top: 2rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+
+}
+
+/**
+ *
+ * Featured Section
+ *
+ */
+
+
+.front-page-block-4 {
+	// background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
+	// -webkit-background-size: cover;
+	//   -moz-background-size: cover;
+	//   -o-background-size: cover;
+	//   background-size: cover;
+
+	color: lightgray;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+
+
+	.featured-box {
+
+		.featured-content {
+
+			text-align: center;
+			// background-color: rgba( darken( $oil, 10% ), .8);
+			@include background(linear-gradient( $oil, rgba( $oil, .8 ) ) left repeat);
+			// background-size: 0% 0%;
+			
+			img {
+				width: 100%;
+				@include transition(all 2.0s ease-in-out);
+
+			}
+
+			@include transition(all 1s ease-in-out);
+
+			&:hover {
+				// background-color: darken( $brand-primary, 0% );
+				// background-color: #1a82f7;
+				  // background: url(images/linear_bg_2.png);
+				  // background-repeat: repeat-x;
+
+				  /* Safari 4-5, Chrome 1-9 */
+				  // background-color: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(#be8706));
+
+				@include background(linear-gradient( $gray-light, $brand-primary ) left repeat);
+
+				color: black;
+
+				img {
+					@include transform(translateY(50px));
+					@include transform(scale(0.9) rotate(-3deg));
+					@include transform-origin(center top);
+					@include transform-style(preserve-3d);
+				}
+			}
+
+			// padding: .5rem;
+			margin-bottom: .5rem;
+
+				.featured-header {
+					min-height: 8rem;
+					height: auto;
+
+					i {
+						// margin-bottom: .5rem;
+					}
+				}
+
+				.featured-text {
+					// padding-top: 1rem;
+					// min-height: 150px;
+
+				}
+
+				h2 {
+					font-size: 2.5rem;
+				}
+
+				a {
+					margin-top: 2rem;
+					margin-bottom: 3rem;
+					background-color: transparent;
+					border: 2px solid $gray-light;
+
+					&:hover {
+						background-color: $oil;
+						border: 2px solid black;
+					}
+				}
+
+				p {
+					font-size: 1.8rem;
+					font-weight: 300;
+					padding: 1rem;
+					padding-right: 3rem;
+					padding-left: 3rem;
+				}
+
+
+			}
+
+	}
+
+
+}
+
+/**
+ *
+ * Frontpage Call Out Section
+ *
+ */
+
+
+.front-page-block-5 {
+
+	background-color: rgba( darken( $jet, 20% ), .5);
+	border: 1px solid gray;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+
+
+	.callout-box {
+
+		h2,h3 {
+			font-family: 'Bevan', cursive;
+			font-variant: small-caps;
+			text-align: center;
+			// text-transform: uppercase;
+			color: lighten( $brand-info, 25%);
+			// color: lighten( $steel, 50%);
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+
+		h2 {
+			font-size: 5rem;
+		}
+
+		h3 {
+			font-size: 3rem;
+		}
+
+		#interest {
+			color: lighten( $brand-primary, 0% );
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			// border: 1px solid red;
+		}
+
+		@media (max-width: 480px) {
+	    	h2 {
+	    		font-size: 3rem;
+	    	}	
+	    	h3 {
+	    		font-size: 2rem;
+	    	}
+	    }
+	}
+
+
+}
+   
+
+
+/**
+ *
+ * Main Content
+ *
+ */
+
+.content-wrapper {
+
+	background-color: rgba( darken( $steel, 0% ), .85);
+	padding-bottom: 5rem;
+
+
+} 
+.content-area {
+	// background-color: $snow;
+	// border: 3px solid red;
+	padding: 0;
+}
+
+.site-main {
+	// border: 1px solid yellow;
+	// background-color: $steel;
+	// border: 1px solid blue;
+	padding: 0;
+	margin-top: 1.1rem;
+
+	.error-404 {
+		color: lighten( $brand-primary, 10% );
+	}
+
+	.none-found {
+		// border: 3px solid yellow;
+		color: lighten( $brand-primary, 20% );
+		font-size: 2rem;
+		padding-left: 1rem;
+	}
+
+
+	.nav-links {
+		// border: 1px solid blue;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-top: 1.4rem;
+		// padding-bottom: 0rem;
+		background-color: rgba( darken( $steel, 10% ), .85);
+
+
+		a {
+			color: lighten( $brand-primary, 10% );
+		}
+	}
+
+	.navigation {
+
+		.nav-links {
+
+			@include clearfix();
+			padding-bottom: 1.5rem;
+
+			.nav-previous {
+				float: left;
+			}
+			.nav-next {
+				float: right;
+			}
+		}
+	}
+}
+
+
+/**
+ *
+ * Page Styles
+ *
+ */
+.page-header-container {
+	
+	background-color: rgba( darken( $gray-light, 0% ), .5);
+
+
+	.page-header {
+
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+
+		h1 {
+			font-family: 'Bevan', cursive;
+			font-variant: small-caps;
+			font-size: 6rem;
+			color: darken( $gray-lighter, 10% );
+		}
+	}
+	/**
+	 *
+	 * Non Broken Line Handling
+	 *
+	 */
+	
+	/* These are technically the same, but use both */
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+
+	  -ms-word-break: break-all;
+	  /* This is the dangerous one in WebKit, as it breaks things wherever */
+	  word-break: break-all;
+	  /* Instead use this non-standard one: */
+	  word-break: break-word;
+
+	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+	  -ms-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -webkit-hyphens: auto;
+	  hyphens: auto;    
+}
+
+/**
+ *
+ * Blog Styles
+ *
+ */
+.blog-post {
+	// background-color: rgba( darken( $silver, 0% ), .9);
+	// border: 1px solid blue;
+
+	background-color: rgba( lighten( $gray-light, 50% ), .8);
+	padding: 1rem;
+	margin-bottom: 1rem;
+	margin-right: 0rem;
+	margin-left: .15rem;
+
+	.entry-header {
+		background-color: rgba( darken( $gray-light, 30% ), .65);
+		box-shadow: 3px 3px 8px $gray-light;
+
+		margin-bottom: 2.5rem;
+		margin-left: 1.3rem;
+		margin-right: 1.3rem;
+
+
+
+		h1, h2 {
+			font-size: 3.5rem;
+			font-variant: small-caps;
+			font-weight: 300;
+			padding-top: 2rem;
+			padding-left: 2rem;
+
+			a {
+				color: lighten( $gray-light, 20% );
+				text-decoration: none;
+				&:hover {
+					color: darken( $brand-primary, 10% );
+				}
+			}
+
+
+		}
+		.entry-meta {
+			padding-bottom: 1rem;
+			padding-left: 2rem;
+			color: $gray-lighter;
+
+			a {
+				color: darken( $gray-lighter, 10% );
+			}
+
+
+		}
+	}
+
+	.featured-img {
+		padding-bottom: 2rem;
+		
+		img {
+			@include transition(all 1.0s ease-in-out);
+
+			&:hover {
+				@include transform(translateY(0px));
+				@include transform(scale(0.9) rotate(0deg));
+				@include transform-origin(center top);
+				@include transform-style(preserve-3d);
+				opacity: .5;
+			}
+		}
+
+		.for-spanish {
+			margin-top: 3.5rem;
+		}
+
+	}
+
+	.entry-content {
+		// border: 1px solid yellow;
+		th {
+			min-width: 120px;
+		}
+	}
+
+	.only-text {
+		margin-left: 1.3rem;
+		margin-right: 1.4rem;
+	}
+
+	.entry-footer {
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
+
+	.moretag {
+		display: block;
+		margin-top: 3rem;
+	}
+
+	/**
+	 *
+	 * Non Broken Line Handling
+	 *
+	 */
+	
+	/* These are technically the same, but use both */
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+
+	  -ms-word-break: break-all;
+	  /* This is the dangerous one in WebKit, as it breaks things wherever */
+	  word-break: break-all;
+	  /* Instead use this non-standard one: */
+	  word-break: break-word;
+
+	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+	  -ms-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -webkit-hyphens: auto;
+	  hyphens: auto;    
+}
+//**** Post footer icons
+
+.cat-links:before {
+	font-family: "FontAwesome";
+	content: "\f07c";
+	margin-right: 0.5em;
+}
+
+.tags-links:before {
+	font-family: "FontAwesome";
+	content: "\f02c";
+	margin-right: 0.5em;
+}
+
+.comments-link:before {
+	font-family: "FontAwesome";
+	content: "\f075";
+	margin-right: 0.5em;
+}
+
+.edit-link:before {
+	font-family: "FontAwesome";
+	content: "\f040";
+	margin-right: 0.5em;
+}
+
+ 
+/**
+ *
+ * Single Page w Sidebar
+ *
+ */
+.single-page {
+
+	background-color: rgba( lighten( $gray-light, 45% ), .8);
+
+	h1, h2, h3, h4, h5 {
+		color: lighten( $gray-light, 5% );
+	}
+
+	.img-featured {
+		width: 100%;
+		height: auto;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.entry-header {
+		h2 {
+			font-family: 'Bevan', cursive;
+			font-variant: small-caps;
+			font-size: 4rem;
+			color: darken( $brand-primary, 10% );
+			padding-bottom: 1rem;
+			padding-right: 2rem;
+		}
+	}
+
+	.entry-content {
+
+		padding: 3rem;
+		padding-top: 5rem;
+		font-size: 2rem;
+		font-weight: 300;
+
+	}
+
+}
+
+/**
+ *
+ * Contact Page Styles
+ *
+ */
+.contact-content {
+
+	background-color: rgba( lighten( $brand-primary, 30% ), .6);
+	// background-color: rgba( lighten( $gray-light, 45% ), .8);
+	// border: 1px solid red;
+	margin-bottom: 6rem;
+	color: darken( $oil, 20% );
+
+
+	.pg-header-txt {
+		text-align: center;
+		padding-bottom: 2rem;
+		padding-top: 8rem;
+
+		h2 {
+			text-transform: uppercase;
+			padding-bottom: 1rem;
+			font-weight: 200;
+			font-size: 5rem;
+		}
+		h4 {
+			font-weight: 200;
+		}
+	}
+
+	.container {
+		padding-bottom: 8rem;
+
+		.contact-header-txt {
+			padding-bottom: 4rem;
+			font-variant: small-caps;
+
+			h3 {
+				font-weight: 200;
+				font-size: 4rem;
+			}
+
+		}
+
+		.col-form {
+			// background-color: lighten( #e3e3e3, 5%);
+			padding: 3rem;
+		}
+
+		.col-content {
+			padding-bottom: 5rem;
+			padding: 3rem;
+				// border: 1px solid red;
+
+
+			.address-text {
+				padding-bottom: 3rem;
+				font-size: 2rem;
+				font-weight: 300;
+			}
+
+			.contact-social {
+					padding-top: 3rem;
+
+				span {
+					padding-right: 3rem;
+
+					a {
+						color: darken( $brand-primary, 30%);
+
+						&:hover {
+							color: $smoke;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+ *
+ * Side Bar Styles
+ *
+ */
+.sidebar {
+	padding-right: 0;
+	// border: 1px solid red;
+
+
+// Widget icons
+
+.widget_recent_comments ul {
+	li:before {
+		color: lighten( $gray-light, 40%);
+	}
+}
+
+.widget_archive ul {
+	li:before {
+		color: lighten( $gray-light, 40%);
+	}
+}
+
+.widget_categories ul {
+	li:before {
+		color: lighten( $gray-light, 40%);
+	}
+}
+
+.widget_pages ul, .widget_nav_menu ul {
+	li:before {
+		color: lighten( $gray-light, 40%);
+	}
+	.children, .sub-menu {
+		li:before {
+		color: lighten( $gray-light, 40%);
+		}
+	}
+	.children .children, .sub-menu .sub-menu {
+		li:before {
+		color: lighten( $gray-light, 40%);
+		}
+	}
+}
+
+	@media (max-width: 768px) {
+   		
+	padding-left: 0;
+
+
+    }
+
+ /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;    
+}
+
+/**
+ *
+ * Land & Property Single Page Style
+ *	content-land-page.php
+ *	content-property-page
+ */
+
+.single-details {
+	// border: 3px solid dodgerblue;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	background-color: rgba( lighten( $steel, 30% ), .8 );
+	font-size: 2rem;
+	color: darken( $gray-light, 10% );
+	h2 {
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		padding-bottom: 2rem;
+		
+	}
+
+}
+.single-description {
+	// border: 3px solid yellow;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	background-color: rgba( $smoke, .8 );
+	font-size: 1.8rem;
+	color: lighten( $gray, 5% );
+
+	h2 {
+		font-family: 'Bevan', cursive;
+		font-variant: small-caps;
+		padding-bottom: 2rem;
+		color: lighten( $gray, 10% );
+
+	}
+
+	p {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+.single-map {
+	border: 3px solid lighten( black, 25% );
+	padding-bottom: 3rem;
+	background-color: rgba( darken( $charcoal, 10% ), .4 );
+	padding-top: 3rem;
+	font-size: 2rem;
+}
+
+/**
+ *
+ * Widget Styles
+ *
+ */
+
+.widget {
+
+	border: 4px solid lighten( $gray-light, 15%);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	background-color: rgba( lighten( $gray-light, 5% ), .7);
+	// background-color: rgba( lighten( $gray-light, 15% ), .7);
+
+	
+
+	.widget-title {
+		font-size: 3rem;
+		font-weight: 500;
+		font-variant: small-caps;
+		color: lighten( $gray-light, 40% );
+		padding-bottom: 2rem;
+	}
+
+	.srp-post-content {
+		color: lighten( $gray-light, 35% );
+	}
+
+	.custom-widget {
+		// border: 1px solid red;
+		h3 {
+		color: lighten( $brand-primary, 0% );
+		text-align: center;
+		}
+		h4 {
+			color: lighten( $brand-primary, 20% );
+			text-align: center;
+		}
+		img {
+			padding-bottom: 2rem;
+			padding-top: 2rem;
+
+			@include transition(all 1.0s ease-in-out);
+
+			&:hover {
+				@include transform(translateY(0px));
+				@include transform(scale(0.9) rotate(0deg));
+				@include transform-origin(center top);
+				@include transform-style(preserve-3d);
+				opacity: .5;
+			}
+		}
+		p {
+			color: lighten( $steel, 40% );
+			text-align: center;
+			font-size: 1.6rem;
+			padding-bottom: 2rem;
+
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			font-size: 1.5rem;
+			padding: 1rem;
+			font-weight: 300;
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+				color: $gray-lighter;
+				background-color: $brand-primary;
+			}					
+
+			a {
+				// display: block;
+				color: darken( $gray-lighter, 10%);
+				font-size: 2rem;
+				font-variant: small-caps;
+				&:hover {
+					text-decoration: none;
+					color: $gray-lighter;
+
+				}
+			}
+
+		}
+	}
+
+	form {
+		padding-bottom: 1rem;
+
+		label {
+			color: $base;
+			// font-variant: small-caps;
+			font-weight: 300;
+			font-size: 1.8rem;
+		}
+	}
+
+}
+
+// Widget icons
+
+.widget_recent_comments ul {
+	li:before {
+		content: "\f075 \0000a0";
+		font-family: FontAwesome;
+	}
+}
+
+.widget_archive ul {
+	li:before {
+		font-family: FontAwesome;
+		content: "\f291 \0000a0";
+	}
+}
+
+.widget_categories ul {
+	li:before {
+		font-family: FontAwesome;
+		content: "\f260 \0000a0";
+	}
+}
+
+.widget_pages ul, .widget_nav_menu ul {
+	li:before {
+		font-family: FontAwesome;
+		content: "\f16c  \0000a0";
+	}
+	.children, .sub-menu {
+		li:before {
+		font-family: FontAwesome;
+			content: "\f101 \0000a0";
+		}
+	}
+	.children .children, .sub-menu .sub-menu {
+		li:before {
+		font-family: FontAwesome;
+			content: "\f105 \0000a0";
+		}
+	}
+}
+ 
+/**
+ *
+ * Footer Styles
+ *
+ */
+
+.footer-main {
+	background-color: darken( $steel, 10% );
+	
+	.copyright {
+		padding: 1rem;
+		background-color: $oil;
+
+		p {
+			color: $gray-light;
+			padding-top: .5rem;	
+		}
+
+		a {
+			color: $gray-light;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+
+	.widget {
+		border: 0px solid red;
+		padding-right: .5rem;
+		padding-left: .5rem;
+
+		color: lighten(grey, 30%);
+		background-color: darken( $steel, 10% );
+
+		// @media screen and (min-width: 991px) {
+		// 	background-color: $charcoal;
+		// 	z-index: 1;
+		// 	position: relative;
+			
+		// }
+
+		.widget-title {
+			color: $gray-lighter;
+			padding-bottom: 2rem;
+		}
+
+		li {
+			background-color: rgba( darken( $oil, 10% ), .5);
+			margin-bottom: .2rem;
+			padding: 1rem;
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+				background-color: $steel;
+
+			}
+		}
+
+		a {
+			// border: 1px solid black;
+			color: lighten(grey, 30%);
+			font-size: 2rem;
+
+			
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
+
+
+.acf-map {
+	width: 100%;
+	height: 400px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+.comments-title {
+    font-weight: 900;
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+.comments-area > ol {
+    padding: 0;
+    margin: 2em 0;
+    list-style-type: none;
+}
+
+ol.children { list-style-type: none; }
+
+.comment-list ol { margin-left: 50px; }
+
+.comment-meta { margin-bottom: 1em; }
+
+.comment-author .avatar {
+    width: 50px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.comment-author .fn {
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+.comment-metadata {
+    font-size: 14px;
+    font-size:1.4rem;
+}
+
+.comment-content { font-size: 90%; }
+
+.comment-content,
+.reply { margin-left: 70px; }
+
+.comment-body {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: solid hsl(0, 0%, 80%) 1px;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment-content ol { margin-left: 1.5em; }
+
+.reply {
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+/* Comments responsive */
+@media screen and (max-width:600px) {    
+    .comment-list ol { margin-left: 0; }
+    
+    .comment-content ol { margin-left: 1.5em; }
+    
+    .comment-content,
+    .reply { margin-left: 0; }
+}
+       
+
+.bypostauthor > .comment-body {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 2em;
+    background: hsl(0, 0%, 93%);
+    border: none;
+}
+              
+.comment-reply-title {
+    margin-bottom: .5em;
+    font-weight: 900;
+    font-size: 30px;
+    font-size: 3rem;
+}
+
+.comment-form {
+    padding-bottom: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.comment-form textarea {
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+
+    @media screen and ( max-width: 470px ) {
+	    // border: 2px solid red;
+		width: 100%;
+    }
+}
+
+.comment-form label { display: block; }
+
+.required { color: red; }
+
+.comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #84bd68;
+    background: hsl(100, 39%, 57%);
+}
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

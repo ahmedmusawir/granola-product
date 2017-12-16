@@ -1,0 +1,90 @@
+﻿/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+
+.titlehead, .titlehead2 {font-family: Amatic SC; font-size: 88px; line-height: 72px; font-style: normal; font-weight: 600; color: #000000; text-decoration: none; padding: 10px 0px 10px; margin: 0px 0px 10px; text-align: center; border-top: 8px solid #e74c3c; border-bottom: 8px solid #e74c3c;}
+
+.home .titlehead {display: none !important;}
+
+.carousel-inner .slider_content .text {display: none;}
+.home .carousel-inner .slider_content .text {display: block;}
+
+.page-id-16430 .titlehead, .page-id-16323 .titlehead, .page-id-16423 .titlehead, .page-id-16434 .titlehead, .page-id-16432 .titlehead, .page-id-16696 .titlehead, .page-id-16443 .titlehead, .page-id-16425 .titlehead, .page-id-16351 .titlehead, .page-id-16420 .titlehead, .page-id-16427 .titlehead, .page-id-16439 .titlehead, .page-id-16441 .titlehead, .page-id-16437 .titlehead, .page-id-16418 .titlehead {display: none !important;}
+
+.page-id-16430 .titlehead2, .page-id-16323 .titlehead2, .page-id-16423 .titlehead2, .page-id-16434 .titlehead2, .page-id-16432 .titlehead2, .page-id-16696 .titlehead2, .page-id-16443 .titlehead2, .page-id-16425 .titlehead2, .page-id-16351 .titlehead2, .page-id-16420 .titlehead2, .page-id-16427 .titlehead2, .page-id-16439 .titlehead2, .page-id-16441 .titlehead2, .page-id-16437 .titlehead2, .page-id-16418 .titlehead2 {display: block !important;}
+
+.titlehead2 {display: none !important;}
+.titleabout {display: none !important;}
+.page-id-15740 .titlehead {display: none !important;}
+.page-id-15740 .titleabout {display: block !important;}
+.titleabout {font-style: normal; font-weight: 600; color: #000000; text-decoration: none; padding: 10px 0px 10px; margin: 0px 0px 10px; text-align: center; border-top: 8px solid #e74c3c; border-bottom: 8px solid #e74c3c;}
+.titleabout .inner {font-family: Amatic SC; font-size: 88px; line-height: 72px; }
+.titleabout .registered {position: relative; top: -55px;}
+.titlehead .registered {position: relative; top: -55px; font-family: 'Raleway' !important; font-size: 14px !important;}
+
+.customlook p {font-family: Amatic SC; font-size: 72px; line-height: 72px; font-style: normal; font-weight: 600; color: #e74c3c; text-decoration: none; padding: 0; margin: 0; text-align: center;}
+
+/*.page-id-16873 .titlesubhead {display: block !important; font-family: Amatic SC; font-size: 52px; line-height: 72px; font-style: normal; font-weight: 600; color: #e74c3c; text-decoration: none; padding: 0; margin: 0; text-align: center;}*/
+.page-id-16873 .idx {display: none !important;}
+
+.titlesubhead, .titlesubhead2, .titlesubhead3, .titlesubhead4 {font-family: Amatic SC; font-size: 60px; line-height: 72px; font-style: normal; font-weight: 600; color: #000000; text-decoration: none; padding: 10px 0px 10px; margin: 0px 0px 10px; text-align: center;}
+
+.page-id-15704 .titlesubhead4 {color: #ff0000 !important;}
+
+.page-id-1815 .titlesubhead {display: block;}
+.titlesubhead, .titlesubhead2, .titlesubhead3, .titlesubhead4 {display: none;}
+.page-id-16914 .titlesubhead2 {display: block;}
+.page-id-16873 .titlesubhead3 {display: block;}
+.page-id-15704 .titlesubhead4 {display: block;}
+
+.single-post .column1 {width: 100% !important;}
+.single-post .column2 {display: none;}
+
+.post_image {width: 75% !important; margin: 0px auto;}
+.loop_post_image img{max-width: 100px;width: 100%;height: auto;display: inline;float: left;margin: 1em .75em .75em 0;}
+.blog_three_columns{width:100%}
+.blog_three_columns .column1{width:19%;float:left;padding: 8px;background:#F3F3F3;}
+.blog_three_columns .column2{width:58%;float:left;border-right: 2px solid #E74C3C;border-left: 2px solid #E74C3C;}
+.blog_three_columns .column3{width:19%;float:left;padding: 8px;background:#F3F3F3;}
+
+.blog_three_columns .column1 .column_inner{padding:0 15px 0 0;}
+.blog_three_columns .column2 .column_inner{padding:0 5px 0 10px;}
+.blog_three_columns .column3 .column_inner{padding:0 0 0 15px;}
+
+.blog_three_columns .column1 h4, h4 a{
+	font-size: 120%;
+}
+
+.blog_three_columns .column3 h2, h2 a
+{
+	font-size:25px;
+}
+
+.page_three_column .column1{border-right: 2px solid #E74C3C;}
+.page_three_column .column2{border: none !important;}
+.page_three_column .column3{border-left: 2px solid #E74C3C;}
+.header_top_bottom_holder{background:#ffffff; }
+nav.main_menu.right {
+   left: 5%!important;
+}
+@media screen and (max-width:768px){
+	.blog_three_columns .column1{width:99%;}
+	.blog_three_columns .column2{width:100%;}
+	.blog_three_columns .column3{width:99%;}
+}
+.wpcf7-form-control.wpcf7-submit.stb-submit,.dgd_stb_box.default form input[type=submit], .dgd_stb_box form input.submit
+{
+	width: auto!important;
+}
+.center
+{
+	text-align: center!important;
+}
